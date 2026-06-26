@@ -1,1 +1,33 @@
+# ============================================================
+# Step 2 : Handling Outliers
+# ============================================================
 
+print("\nHandling Outliers using IQR Method")
+
+numerical_columns = [
+    'ANNUAL',
+    'Jan-Feb',
+    'Mar-May',
+    'Jun-Sep',
+    'Oct-Dec'
+]
+
+for column in numerical_columns:
+
+    Q1 = df[column].quantile(0.25)
+    Q3 = df[column].quantile(0.75)
+
+    IQR = Q3 - Q1
+
+    lower = Q1 - 1.5 * IQR
+    upper = Q3 + 1.5 * IQR
+
+    df[column] = np.where(
+        df[column] < lower,
+        lower,
+        np.where(df[column] > upper,
+                 upper,
+                 df[column])
+    )
+
+print("✅ Outliers handled successfully.")
