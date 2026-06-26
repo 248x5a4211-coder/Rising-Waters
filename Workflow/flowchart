@@ -1,1 +1,126 @@
-
+                           START
+                              │
+                              ▼
+                  Epic 1 : Data Collection
+                              │
+                              ▼
+        Download Historical Flood Dataset (CSV)
+                              │
+                              ▼
+        Load Dataset using Pandas (read_csv)
+                              │
+                              ▼
+             Dataset Verification & Inspection
+      (head(), info(), shape(), describe(), null values)
+                              │
+                              ▼
+         ──────────────────────────────────────
+            Epic 2 : Visualizing & Analysing
+         ──────────────────────────────────────
+                              │
+                              ▼
+               Import Required Libraries
+                              │
+                              ▼
+                Exploratory Data Analysis
+                              │
+            ┌─────────────────┼─────────────────┐
+            ▼                 ▼                 ▼
+    Univariate          Multivariate      Descriptive
+     Analysis             Analysis         Statistics
+            │                 │                 │
+            ▼                 ▼                 ▼
+ Distribution Plots    Correlation Map     Statistical Summary
+ Box Plots             Scatter Plots       Data Overview
+ Monthly Rainfall      Feature Relation    Seasonal Analysis
+ Class Distribution    Feature Importance  Flood Frequency
+                              │
+                              ▼
+         ──────────────────────────────────────
+             Epic 3 : Data Pre-processing
+         ──────────────────────────────────────
+                              │
+                              ▼
+               Handle Missing Values
+                              │
+                              ▼
+                 Detect & Treat Outliers
+                     (IQR Capping)
+                              │
+                              ▼
+            Encode Categorical Variables
+             (If categorical data exists)
+                              │
+                              ▼
+         Split Dataset (80% Train / 20% Test)
+                              │
+                              ▼
+          Apply Feature Scaling
+          (StandardScaler for KNN)
+                              │
+                              ▼
+         ──────────────────────────────────────
+                Epic 4 : Model Building
+         ──────────────────────────────────────
+                              │
+                              ▼
+             Train Decision Tree Model
+                              │
+                              ▼
+             Train Random Forest Model
+                              │
+                              ▼
+                 Train KNN Model
+                              │
+                              ▼
+               Train XGBoost Model
+                              │
+                              ▼
+          Evaluate Each Model Using
+      • Accuracy
+      • ROC-AUC
+      • Confusion Matrix
+      • Classification Report
+      • ROC Curve
+                              │
+                              ▼
+           Compare Model Performance
+                              │
+                              ▼
+          Select Best Performing Model
+                  (XGBoost)
+                              │
+                              ▼
+      Save Model using Joblib & Pickle (.pkl)
+                              │
+                              ▼
+         ──────────────────────────────────────
+             Epic 5 : Application Building
+         ──────────────────────────────────────
+                              │
+                              ▼
+             Design HTML User Interface
+                              │
+                              ▼
+        Develop Flask Web Application
+                              │
+                              ▼
+       Load Saved Model & Scaler (.pkl)
+                              │
+                              ▼
+        User Enters Rainfall Parameters
+                              │
+                              ▼
+        Model Predicts Flood Probability
+                              │
+                              ▼
+         Display Flood Prediction Result
+                              │
+                              ▼
+        Test and Validate Application
+                              │
+                              ▼
+     Ready for IBM Cloud Deployment
+                              │
+                              ▼
+                         CONCLUSION
