@@ -1,1 +1,45 @@
 
+# Data Pre-processing
+
+Data preprocessing is an essential stage in the machine learning pipeline that improves data quality before model training.
+
+The preprocessing workflow includes:
+
+## Handling Missing Values
+
+- Checked the dataset for null values.
+- Numerical values are replaced using the median if required.
+- Categorical values are replaced using the mode.
+- The dataset used in this project contained no missing values.
+
+## Handling Outliers
+
+- Outliers were detected using the Interquartile Range (IQR) method.
+- Extreme rainfall values were capped using lower and upper IQR boundaries.
+- This reduces the impact of abnormal observations while preserving the dataset.
+
+## Handling Categorical Values
+
+- Checked the dataset for categorical features.
+- Label Encoding is applied when categorical values are present.
+- The current dataset contains only numerical attributes, so no encoding was required.
+
+## Splitting the Dataset
+
+The dataset is divided into:
+
+- Training Set: 80%
+- Testing Set: 20%
+
+A stratified split is used to maintain the original flood and non-flood class distribution.
+
+## Feature Scaling
+
+Feature scaling is performed using StandardScaler.
+
+The scaler:
+
+- Learns the statistical properties from the training data.
+- Applies the same transformation to testing data.
+- Prevents data leakage.
+- Improves model performance, especially for KNN.
