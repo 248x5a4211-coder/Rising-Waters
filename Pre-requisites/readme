@@ -1,1 +1,131 @@
 
+# Software and Tools Used
+
+## Description
+
+
+---
+
+## Resources
+
+### 1. Anaconda Navigator
+
+Anaconda Navigator is a desktop graphical user interface that simplifies package management and environment creation for Python-based data science projects.
+
+**Official Website:**
+https://www.anaconda.com/download
+
+---
+
+### 2. PyCharm
+
+PyCharm is a professional Integrated Development Environment (IDE) designed specifically for Python development. It offers intelligent code completion, debugging, testing, and project management features.
+
+**Official Website:**
+https://www.jetbrains.com/pycharm/
+
+---
+
+### 3. NumPy
+
+NumPy is the fundamental library for numerical computing in Python. It provides efficient support for large, multidimensional arrays, matrices, and mathematical operations.
+
+**Documentation:**
+https://numpy.org/doc/stable/
+
+---
+
+### 4. Pandas
+
+Pandas is a powerful data manipulation and analysis library used for loading, cleaning, transforming, and analyzing structured datasets.
+
+**Documentation:**
+https://pandas.pydata.org/docs/
+
+---
+
+### 5. Scikit-learn
+
+Scikit-learn is a popular machine learning library that provides algorithms for classification, regression, clustering, preprocessing, model selection, and evaluation.
+
+**Documentation:**
+https://scikit-learn.org/stable/
+
+---
+
+### 6. Matplotlib
+
+Matplotlib is a comprehensive plotting library used to create static, animated, and interactive visualizations for data analysis and model evaluation.
+
+**Documentation:**
+https://matplotlib.org/stable/
+
+---
+
+### 7. Seaborn
+
+Seaborn is a high-level statistical visualization library built on top of Matplotlib. It provides attractive and informative charts for exploratory data analysis.
+
+**Documentation:**
+https://seaborn.pydata.org/
+
+---
+
+### 8. Flask
+
+Flask is a lightweight Python web framework used to build web applications and deploy machine learning models with a simple and flexible architecture.
+
+**Documentation:**
+https://flask.palletsprojects.com/
+
+---
+
+## Python Libraries Installation
+
+Install all the required libraries using the following command:
+
+```bash
+pip install numpy pandas scikit-learn matplotlib seaborn flask joblib
+```
+
+If your project uses **XGBoost**, install it separately:
+
+```bash
+pip install xgboost
+```
+
+---
+
+## Development Environment
+
+* **Programming Language:** Python 3.10+
+* **IDE:** PyCharm Community Edition
+* **Environment Manager:** Anaconda Navigator
+* **Machine Learning Library:** Scikit-learn
+* **Data Analysis:** Pandas & NumPy
+* **Visualization:** Matplotlib & Seaborn
+* **Web Framework:** Flask
+* **Model Serialization:** Joblib
+* **Operating System:** Windows 10/11
+
+---
+
+## Requirements
+
+```
+Python >= 3.10
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+flask
+joblib
+xgboost (optional)
+```
+
+---
+
+## License
+
+This project is intended for educational and learning purposes. You may modify and extend it as needed for academic or personal use.
