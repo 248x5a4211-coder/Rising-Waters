@@ -1,1 +1,29 @@
+# ============================================================
+# Step 6.1 : Handling Missing Values
+# ============================================================
 
+print("="*60)
+print("Handling Missing Values")
+print("="*60)
+
+missing = df.isnull().sum()
+
+if missing.sum() == 0:
+    print("✅ Dataset contains no missing values.")
+else:
+    print(missing[missing > 0])
+
+    # Numerical columns
+    num_cols = df.select_dtypes(include=['int64','float64']).columns
+
+    for col in num_cols:
+        df[col].fillna(df[col].median(), inplace=True)
+
+    # Categorical columns
+    cat_cols = df.select_dtypes(include=['object']).columns
+
+    for col in cat_cols:
+        df[col].fillna(df[col].mode()[0], inplace=True)
+
+print("\nMissing values after preprocessing")
+print(df.isnull().sum())
