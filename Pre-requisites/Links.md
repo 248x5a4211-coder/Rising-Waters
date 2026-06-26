@@ -7,6 +7,7 @@ This document provides a comprehensive overview of the **Smart Lender – Loan E
 ## 🏗️ Project Architecture & Components
 
 The system consists of several integrated components that process loan application data and predict loan eligibility.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/07d0944d-cbe4-4af1-aa78-7e063f7fbf12" />
 
 ```mermaid
 graph TD
