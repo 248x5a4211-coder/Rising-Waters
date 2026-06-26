@@ -48,6 +48,3 @@ Deploy the application on IBM Cloud.
 
 Conclusion
 
-The Rising Waters Flood Prediction System successfully combines historical rainfall analysis with machine learning techniques to provide reliable flood risk predictions. Through systematic data analysis, preprocessing, model comparison, and web application development, the project achieved high predictive performance using the XGBoost algorithm (approximately 96.55% accuracy). The integrated Flask application enables real-time flood risk assessment and serves as a scalable solution for disaster preparedness and early warning systems.
-
-This workflow is suitable for inclusion in your GitHub README, IBM SkillsBuild project report, and project documentation. It aligns directly with the code you've developed, from data collection through deployment.
