@@ -1,1 +1,29 @@
+# ============================================================
+# Step 6.4 : Train-Test Split
+# ============================================================
 
+feature_columns = [
+    'ANNUAL',
+    'Jan-Feb',
+    'Mar-May',
+    'Jun-Sep',
+    'Oct-Dec',
+    'YEAR'
+]
+
+X = df[feature_columns]
+
+y = df['FLOODS']
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X,
+    y,
+    test_size=0.20,
+    random_state=42,
+    stratify=y
+)
+
+print("="*50)
+print("Training Samples :", len(X_train))
+print("Testing Samples  :", len(X_test))
+print("="*50)
