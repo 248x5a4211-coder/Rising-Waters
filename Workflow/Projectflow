@@ -1,1 +1,53 @@
+Project Flow
+Epic 1: Data Collection
+Download the flood prediction dataset.
+Load the dataset into Jupyter Notebook using Pandas.
+Verify dataset structure and integrity.
 
+↓
+
+Epic 2: Visualizing and Analysing the Data
+Import Python libraries.
+Explore dataset structure.
+Perform Univariate Analysis.
+Perform Multivariate Analysis.
+Generate descriptive statistics.
+Understand rainfall patterns and flood distribution.
+
+↓
+
+Epic 3: Data Pre-processing
+Handle missing values.
+Detect and treat outliers using the IQR method.
+Encode categorical variables (if present).
+Split data into training and testing sets.
+Apply StandardScaler for feature scaling.
+
+↓
+
+Epic 4: Model Building
+Train Decision Tree model.
+Train Random Forest model.
+Train KNN model.
+Train XGBoost model.
+Compare model performance using evaluation metrics.
+Select the best-performing model.
+Save the trained model using Joblib and Pickle.
+
+↓
+
+Epic 5: Application Building
+Develop HTML pages for the user interface.
+Build a Flask application.
+Integrate the trained XGBoost model.
+Test predictions.
+Validate application functionality.
+Deploy the application on IBM Cloud.
+
+↓
+
+Conclusion
+
+The Rising Waters Flood Prediction System successfully combines historical rainfall analysis with machine learning techniques to provide reliable flood risk predictions. Through systematic data analysis, preprocessing, model comparison, and web application development, the project achieved high predictive performance using the XGBoost algorithm (approximately 96.55% accuracy). The integrated Flask application enables real-time flood risk assessment and serves as a scalable solution for disaster preparedness and early warning systems.
+
+This workflow is suitable for inclusion in your GitHub README, IBM SkillsBuild project report, and project documentation. It aligns directly with the code you've developed, from data collection through deployment.
