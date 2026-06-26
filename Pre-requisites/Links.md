@@ -31,7 +31,8 @@ The system manages user profiles, credit history, loan applications, and ML pred
 
 ### ER Diagram
 
-![Entity Relationship Diagram](C:/Users/ADMIN/.gemini/antigravity/brain/6bfe2cbb-178f-418e-8f7f-8bb132be1a93/images/ER_Diagram.png)
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/49acb1b9-7c07-4366-a606-9969f07fc5b0" />
+
 
 ### Key Entities
 * **USER**: System users (applicants or credit officers).
