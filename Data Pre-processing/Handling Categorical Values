@@ -1,1 +1,21 @@
 
+# ============================================================
+# Step 3 : Handling Categorical Values
+# ============================================================
+
+print("\nHandling Categorical Values")
+
+categorical_columns = df.select_dtypes(include='object').columns
+
+if len(categorical_columns) == 0:
+    print("✅ No categorical columns found.")
+else:
+
+    from sklearn.preprocessing import LabelEncoder
+
+    encoder = LabelEncoder()
+
+    for col in categorical_columns:
+        df[col] = encoder.fit_transform(df[col])
+
+    print("Categorical columns encoded successfully.")
