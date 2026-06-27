@@ -1,1 +1,16 @@
+results = {}
 
+for name, model in models.items():
+
+    X_tr = X_train_sc if name == "KNN" else X_train
+    X_te = X_test_sc if name == "KNN" else X_test
+
+    model.fit(X_tr, y_train)
+
+    y_pred = model.predict(X_te)
+    y_prob = model.predict_proba(X_te)[:, 1]
+
+    results[name] = {
+        "accuracy": accuracy_score(y_test, y_pred),
+        "roc_auc": roc_auc_score(y_test, y_prob)
+    }
