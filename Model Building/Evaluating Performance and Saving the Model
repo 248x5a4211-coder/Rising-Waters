@@ -1,5 +1,16 @@
+=============================
 # Saving the Model
+=============================
 import joblib
 
 joblib.dump(xgb_model, "flood_xgb_model.pkl")
 joblib.dump(scaler, "scaler.pkl")
+
+=============================
+# Model Reload Verification
+=============================
+loaded_model = joblib.load("flood_xgb_model.pkl")
+
+predictions = loaded_model.predict(X_test[:5])
+
+print(predictions)
