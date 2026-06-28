@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flood Risk Detected</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="logo">Floods Prediction</span>
+        <div class="nav-links"><a href="{{ url_for('home') }}">Home</a></div>
+    </nav>
+    <div class="result-container danger">
+        <div class="result-card">
+            <div class="icon-alert">⚠️</div>
+            <h1>High Flood Risk Detected</h1>
+            <p>Based on the weather parameter analysis, conditions favor potential flooding.</p>
+            <a href="{{ url_for('index') }}" class="btn-retry">Check Another Region</a>
+        </div>
+    </div>
+</body>
+</html>
