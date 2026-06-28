@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Region Safe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="logo">Floods Prediction</span>
+        <div class="nav-links"><a href="{{ url_for('home') }}">Home</a></div>
+    </nav>
+    <div class="result-container safe">
+        <div class="result-card">
+            <div class="icon-safe">✅</div>
+            <h1>Low Flood Risk</h1>
+            <p>The current meteorological sequence indicates standard safe parameters.</p>
+            <a href="{{ url_for('index') }}" class="btn-retry">Check Another Region</a>
+        </div>
+    </div>
+</body>
+</html>
