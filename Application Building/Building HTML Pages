@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Floods Prediction - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="logo">Floods Prediction</span>
+        <div class="nav-links">
+            <a href="{{ url_for('home') }}" class="active">Home</a>
+            <a href="{{ url_for('index') }}">Predict Floods</a>
+        </div>
+    </nav>
+    <div class="banner-container">
+        <div class="intro-content">
+            <h2 class="section-title">Introduction</h2>
+            <p>Flood forecasting is the use of forecasted precipitation and streamflow data in rainfall-runoff and streamflow routing models to forecast flow rates and water levels for periods ranging from a few hours to days ahead...</p>
+            <a href="{{ url_for('index') }}" class="btn-primary">Predict Floods</a>
+        </div>
+    </div>
+</body>
+</html>
